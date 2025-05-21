@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #individual
-if [ ! -d "data/individual" ]; then
-    mkdir -p "data/individual"
+if [ ! -d "data/simple" ]; then
+    mkdir -p "data/simple"
 fi
-python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/10K.json --count 10000 --list_length 100
-python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/100K.json --count 100000 --list_length 100
-python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/1M.json --count 1000000 --list_length 100
-python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/10M.json --count 10000000 --list_length 100
+python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/10K.json --count 10000 --list_length 10
+python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/100K.json --count 100000 --list_length 10
+python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/1M.json --count 1000000 --list_length 10
+python3 src/scale_data_one.py test-cases/RMLTC-CC-0001-Alt/data.json data/simple/10M.json --count 10000000 --list_length 10
 
 
 ## multivalue
